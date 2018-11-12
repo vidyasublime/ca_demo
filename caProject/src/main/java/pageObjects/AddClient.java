@@ -144,7 +144,7 @@ public class AddClient {
        return element;
 
        }
-   public static WebElement btn_ Reset(WebDriver driver){
+   public static WebElement btnReset(WebDriver driver){
 
        element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[9]/button[2]"));
         

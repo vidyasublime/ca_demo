@@ -12,6 +12,14 @@ import org.testng.annotations.Test;
 public class LaunchApp {
 	
 	private String title1="";
+	public static WebDriver driver = null;
+
+	public static void main(String[] args) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Android4\\Downloads\\chromedriver.exe");
+				 driver=new ChromeDriver();
+				  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("http://sublimetechnocorp.com/ca_pro_new_new");
+	}
  
 
 

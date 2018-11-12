@@ -44,13 +44,7 @@ public class StaffMaster {
 
         }
 
-    public static WebElement txtbx_qualification_id(WebDriver driver){
-
-        element = driver.findElement(By.name("qualification_id[]"));
-
-        return element;
-
-        }
+   
     public static WebElement txtbx_qualification_id(WebDriver driver){
 
         element = driver.findElement(By.name("qualification_id[]"));
@@ -86,20 +80,8 @@ public class StaffMaster {
         return element;
 
         }
-    public static WebElement txtbx_user_gender(WebDriver driver){
-
-        element = driver.findElement(By.id("user_gender_yes"));
-
-        return element;
-
-        }
-    public static WebElement txtbx_user_gender(WebDriver driver){
-
-        element = driver.findElement(By.id("user_gender_no"));
-
-        return element;
-
-        }
+ 
+   
     public static WebElement txtbx_user_gender(WebDriver driver){
 
         element = driver.findElement(By.id("user_gender_no"));
@@ -214,7 +196,7 @@ public class StaffMaster {
         return element;
 
         }
-    public static WebElement btn_ Reset (WebDriver driver){
+    public static WebElement btn_Reset (WebDriver driver){
 
         element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[15]/button[2]"));
          

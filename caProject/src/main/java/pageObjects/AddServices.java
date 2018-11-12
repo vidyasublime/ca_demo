@@ -36,7 +36,7 @@ public class AddServices {
         return element;
 
         }
-    public static WebElement txtbx_qualification_id[](WebDriver driver){
+    public static WebElement txtbx_qualification_id(WebDriver driver){
 
         element = driver.findElement(By.name("qualification_id[]"));
 
@@ -79,14 +79,14 @@ public class AddServices {
         return element;
 
         }
-    public static WebElement btn_ Reset (WebDriver driver){
+    public static WebElement btn_Reset (WebDriver driver){
 
         element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[11]/button[2]"));
          
         return element;
 
         }
-    public static WebElement btn_ Close(WebDriver driver){
+    public static WebElement btn_Close(WebDriver driver){
 
         element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[11]/button[3]"));
          

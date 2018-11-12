@@ -21,7 +21,7 @@ public class StaffQualification {
        return element;
 
        }
-   public static WebElement btn_ Reset (WebDriver driver){
+   public static WebElement btn_Reset (WebDriver driver){
 
        element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[2]/button[2]"));
         

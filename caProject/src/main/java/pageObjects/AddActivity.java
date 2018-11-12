@@ -32,7 +32,7 @@ public class AddActivity {
        }
 
 
-   public static WebElement btn_ Reset (WebDriver driver){
+   public static WebElement btnReset (WebDriver driver){
 
        element = driver.findElement(By.xpath("//*[@id=\"add_price_type_form\"]/div[3]/button[2]"));
         

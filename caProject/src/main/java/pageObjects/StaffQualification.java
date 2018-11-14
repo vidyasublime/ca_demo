@@ -6,6 +6,15 @@ import org.openqa.selenium.WebElement;
 
 public class StaffQualification {
 	private static WebElement element = null;
+	
+	 public static WebElement AddNew(WebDriver driver){
+		 
+	       element = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[2]/div/div/div[1]/div[2]/div/button"));
+
+	       return element;
+
+	       }
+
 	 public static WebElement txtbx_qualification_name(WebDriver driver){
 		 
        element = driver.findElement(By.name("qualification_name"));

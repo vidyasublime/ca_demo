@@ -14,6 +14,15 @@ public class AddClient {
        return element;
 
        }
+	 public static WebElement addNew(WebDriver driver){
+		 
+	       element = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/div[2]/div/div/div[1]/div[2]/div/button"));
+
+	       return element;
+
+	       }
+
+	
 
    public static WebElement txtbx_no_of_emp(WebDriver driver){
 

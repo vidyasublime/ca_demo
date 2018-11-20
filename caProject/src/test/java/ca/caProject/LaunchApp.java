@@ -10,8 +10,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+
 import pageObjects.LoginPage;
 import pageObjects.Navigation;
+import pageObjects.ReadExcel;
 import pageObjects.StaffQualification;
 
 
@@ -22,7 +24,7 @@ public class LaunchApp {
 	private String title1="";
 	public static WebDriver driver = null;
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws Exception {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Android4\\Downloads\\chromedriver.exe");
 				 driver=new ChromeDriver();
 				  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -39,7 +41,8 @@ public class LaunchApp {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", element);
 Thread.sleep(5000);
-Navigation.lnk_Master(driver).click();
+ReadExcel.setExcelFile(project.data.constants.Constant.Path_TestData+project.data.constants.Constant.File_TestData, project.data.constants.Constant.sheetName);
+/*Navigation.lnk_Master(driver).click();
 
 WebElement element1=Navigation.lnk_Staff_Qualification(driver);
 actions.moveToElement(element1).click().perform();
@@ -56,7 +59,7 @@ WebElement field = StaffQualification.txtbx_qualification_name(driver);
 Boolean is_valid = (Boolean)js.executeScript("return arguments[0].checkValidity();", field);
 String message = (String)js.executeScript("return arguments[0].validationMessage;", field);
 System.out.println(message);
-
+*/
 
 			}
  

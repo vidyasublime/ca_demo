@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test - Suite" duration-ms="71403" started-at="2018-11-20T04:51:53Z" finished-at="2018-11-20T04:53:05Z">
+    <groups>
+    </groups>
+    <test name="Tools QA" duration-ms="71403" started-at="2018-11-20T04:51:53Z" finished-at="2018-11-20T04:53:05Z">
+      <class name="ca.caProject.launchAppCA">
+        <test-method status="PASS" signature="f()[pri:0, instance:ca.caProject.launchAppCA@1b604f19]" name="f" duration-ms="57191" started-at="2018-11-20T10:21:53Z" finished-at="2018-11-20T10:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- ca.caProject.launchAppCA -->
+      <class name="ca.caProject.ClientStatus">
+        <test-method status="PASS" signature="AddClientStatus()[pri:0, instance:ca.caProject.ClientStatus@735b5592]" name="AddClientStatus" duration-ms="14184" started-at="2018-11-20T10:22:50Z" finished-at="2018-11-20T10:23:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddClientStatus -->
+      </class> <!-- ca.caProject.ClientStatus -->
+    </test> <!-- Tools QA -->
+  </suite> <!-- Test - Suite -->
+</testng-results>

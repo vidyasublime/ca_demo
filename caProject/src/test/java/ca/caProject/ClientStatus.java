@@ -60,5 +60,19 @@ List<WebElement> listOfRows = AddClient.client_lst_tbl(driver1).findElements(By.
 	}
 
   }
+  @Test
+  public static void ClientStatusRequired() throws Exception {
+	  WebElement lnkMaster=pageObjects.Navigation.lnk_Master(driver1);
+	  JavascriptExecutor executor = (JavascriptExecutor)driver1;
+executor.executeScript("arguments[0].click();", lnkMaster);
+
+//click client status
+WebElement clientStatus= pageObjects.Navigation.lnk_Client_Status(driver1);
+executor.executeScript("arguments[0].click();", clientStatus);
+// Add new button
+WebElement clientStatusAdd= pageObjects.ClientStatus.AddClientStatus(driver1);
+executor.executeScript("arguments[0].click();", clientStatusAdd);
+
+  }
   }
 
